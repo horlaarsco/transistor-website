@@ -2,3 +2,464 @@
   margin: 0;
   padding: 0;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 5rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+body {
+  background-color: #0c1824;
+  color: white;
+
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif;
+  line-height: 2rem;
+}
+
+.container {
+  max-width: 87%;
+  margin: 0 auto;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 87%;
+  margin: 0 auto;
+  background-color: rgba(12, 24, 36, 0.85);
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+}
+
+.desktop-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 0;
+}
+
+.mobile-navbar {
+  display: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.desktop-navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.desktop-navbar li {
+  margin-left: 1rem;
+}
+
+.desktop-navbar li:hover {
+  border-bottom: solid white 1.5px;
+}
+
+.logo {
+  width: 10rem;
+  margin-right: 1rem;
+}
+
+.signup {
+  box-sizing: border-box;
+  border: solid white 1px;
+  padding: 0 1.1rem;
+  border-radius: 0.5rem;
+}
+
+.signup:hover {
+  background-color: white;
+  color: #0c1824;
+}
+
+section {
+  margin-top: 10rem;
+}
+
+.banner-div {
+  position: relative;
+  margin: 0 6rem;
+  padding: 8.5rem 0;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 5rem;
+  margin-bottom: 1rem;
+}
+
+h1 span {
+  display: block;
+  color: #fbc75d;
+}
+.banner {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  max-width: 900px;
+  border-radius: 0.5rem;
+}
+
+.banner-div > div {
+  width: 60%;
+  right: 0;
+}
+
+.signup-button {
+  display: inline-block;
+  border: solid white 1px;
+  padding: 0.4rem 1.1rem;
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+
+.signup-button:hover {
+  background-color: white;
+  color: #0c1824;
+}
+
+.podcast-section {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 4rem 0;
+}
+
+.podcast-section h2 {
+  margin-bottom: 2rem;
+}
+
+.podcast-section a {
+  color: #fbc75d;
+  display: block;
+  margin-bottom: 3rem;
+  margin-top: 0.5rem;
+  line-height: 1rem;
+}
+
+.podcast-section a:hover {
+  border-bottom: 2px solid #fbc75d;
+}
+.podcast-section > p {
+  max-width: 40rem;
+}
+
+.podcast-img {
+  max-width: 650px;
+}
+
+.analytics-image {
+  width: 73%;
+}
+
+.first-users-img,
+.second-users-img {
+  display: flex;
+  max-width: 87%;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.first-users-img div {
+  width: 49.6%;
+  position: relative;
+  max-height: 256px;
+  overflow: hidden;
+}
+
+.first-users-img img {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.first-users-img p {
+  position: absolute;
+  bottom: 0;
+  right: -0.2rem;
+  padding: 0.3rem 0.7rem;
+  background-color: #38434d;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+
+.second-users-img div {
+  width: 33%;
+  position: relative;
+  max-height: 256px;
+  overflow: hidden;
+}
+
+.second-users-img img {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.second-users-img p {
+  position: absolute;
+  bottom: 0;
+  right: -0.2rem;
+  padding: 0.3rem 0.7rem;
+  background-color: #38434d;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+
+#trial-button {
+  display: inline-block;
+  border: solid white 2px;
+  padding: 0.7rem 1.2rem;
+  border-radius: 2rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+#trial-button:hover {
+  background-color: white;
+  color: #0c1824;
+}
+
+footer {
+  box-sizing: border-box;
+  background-color: #fbc75d;
+  color: black;
+  width: 100%;
+  padding: 3% 6.5%;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+}
+
+footer li {
+  margin-right: 2rem;
+}
+
+.footer-details {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-details li {
+  margin-right: 0.5rem;
+}
+
+.footer-details > div {
+  width: 45%;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact > div {
+  width: 30%;
+}
+
+.contact img {
+  width: 100%;
+}
+
+hr {
+  margin: 1rem 0;
+  border: 0.5px solid black;
+}
+
+.footer-details p {
+  font-size: 1rem;
+}
+
+h5 {
+  margin-bottom: 2rem;
+}
+
+footer a {
+  color: #0c1824;
+  text-decoration: underline;
+}
+
+footer span {
+  display: block;
+  font-size: 0.8rem;
+  margin: 2rem 0;
+}
+
+.radio {
+  max-width: 40rem;
+}
+@media only screen and (max-width: 1150px) {
+  .container {
+    max-width: 92%;
+    margin: 0 auto;
+  }
+
+  header {
+    width: 95%;
+  }
+
+  .banner-div {
+    padding: 8rem 0;
+    margin: 0;
+  }
+
+  .banner-div > div {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 3.8rem;
+  }
+
+  html {
+    font-size: 95%;
+  }
+
+  .youtube {
+    height: 504px;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 80%;
+  }
+
+  .banner-div > div {
+    width: 100%;
+  }
+  .banner-div {
+    text-align: center;
+    padding: 0;
+  }
+
+  .banner {
+    position: relative;
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .podcast-text {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .youtube {
+    height: 450px;
+    width: 90%;
+  }
+
+  .first-users-img,
+  .second-users-img {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 60%;
+  }
+
+  .footer-details {
+    flex-direction: column;
+  }
+
+  .contact {
+    margin-top: 3rem;
+  }
+
+  .first-users-img,
+  .second-users-img {
+    max-width: 95%;
+  }
+
+  .analytics-image {
+    width: 90%;
+  }
+
+  .radio {
+    max-width: 90%;
+  }
+
+  .desktop-navbar {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 1rem;
+  }
+
+  #mobile-nav2 {
+    display: none;
+  }
+
+  .mobile-navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-navbar ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style-type: none;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  .mobile-navbar li {
+    margin-bottom: 1rem;
+  }
+
+  .signup {
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.5rem;
+    width: 80px;
+    margin: 0 auto;
+  }
+  .ham {
+    padding: 0.5rem 1rem;
+    border: solid white 1px;
+    border-radius: 0.5rem;
+  }
+
+  .footer-details > div {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .analytics-image {
+    width: 100%;
+  }
+
+  .first-users-img,
+  .second-users-img {
+    max-width: 100%;
+  }
+
+  .podcast-img {
+    max-width: 90%;
+  }
+}
