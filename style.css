@@ -248,6 +248,7 @@ footer {
 footer ul {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 footer li {
