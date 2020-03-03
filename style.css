@@ -11,10 +11,12 @@ a {
 h2 {
   font-size: 3rem;
   line-height: 5rem;
+  font-weight: 600;
 }
 
 p {
   font-size: 1.5rem;
+  line-height: 1.5;
 }
 body {
   background-color: #0c1824;
@@ -22,7 +24,8 @@ body {
 
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica Neue, Arial, Noto Sans, sans-serif;
-  line-height: 2rem;
+  line-height: 1.5rem;
+  font-weight: 300;
 }
 
 .container {
@@ -59,11 +62,14 @@ nav {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
+  align-self: center;
+  margin-left: 0.5rem;
 }
 
 .desktop-navbar li {
-  margin-left: 1rem;
+  margin-left: 1.2rem;
+  border-bottom: 1.5px solid transparent;
 }
 
 .desktop-navbar li:hover {
@@ -75,14 +81,16 @@ nav {
   margin-right: 1rem;
 }
 
-.signup {
+#signup {
   box-sizing: border-box;
+  padding: 0.18rem 1rem;
+  margin-top: -0.18rem;
   border: solid white 1px;
-  padding: 0 1.1rem;
-  border-radius: 0.5rem;
+
+  border-radius: 0.25rem;
 }
 
-.signup:hover {
+#signup:hover {
   background-color: white;
   color: #0c1824;
 }
@@ -94,13 +102,14 @@ section {
 .banner-div {
   position: relative;
   margin: 0 6rem;
-  padding: 8.5rem 0;
+  padding: 8rem 0;
 }
 
 h1 {
   font-size: 4rem;
   line-height: 5rem;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 h1 span {
@@ -122,11 +131,14 @@ h1 span {
 }
 
 .signup-button {
+  font-size: 1.125rem;
   display: inline-block;
-  border: solid white 1px;
-  padding: 0.4rem 1.1rem;
-  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  color: #fff;
+  font-weight: 600;
   margin-top: 2rem;
+  border: 1px solid #e2e8f0;
 }
 
 .signup-button:hover {
@@ -151,7 +163,8 @@ h1 span {
   display: block;
   margin-bottom: 3rem;
   margin-top: 0.5rem;
-  line-height: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
 }
 
 .podcast-section a:hover {
@@ -252,17 +265,28 @@ footer ul {
 }
 
 footer li {
+  font-size: 0.875rem;
   margin-right: 2rem;
+  font-weight: 600;
 }
 
 .footer-details {
   display: flex;
   justify-content: space-between;
-}
-.footer-details li {
-  margin-right: 0.5rem;
+  align-items: center;
 }
 
+.contact-svg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.contact-svg img {
+  width: 30px;
+  height: 30px;
+}
 .footer-details > div {
   width: 45%;
 }
@@ -280,12 +304,14 @@ footer li {
 }
 
 hr {
-  margin: 1rem 0;
+  margin: 2rem 0;
   border: 0.5px solid black;
 }
 
-.footer-details p {
-  font-size: 1rem;
+.footer-details p,
+.footer-details a {
+  font-size: 1.125rem;
+  line-height: 1.7rem;
 }
 
 h5 {
@@ -316,6 +342,10 @@ footer span {
     width: 95%;
   }
 
+  .contact-svg img {
+    width: 20px;
+    height: 20px;
+  }
   .banner-div {
     padding: 8rem 0;
     margin: 0;
@@ -329,10 +359,6 @@ footer span {
     font-size: 3.8rem;
   }
 
-  html {
-    font-size: 95%;
-  }
-
   .youtube {
     height: 504px;
     width: 80%;
@@ -340,8 +366,13 @@ footer span {
 }
 
 @media only screen and (max-width: 800px) {
-  html {
-    font-size: 80%;
+  h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  h2 {
+    line-height: 4rem;
   }
 
   .banner-div > div {
@@ -360,7 +391,7 @@ footer span {
 
   .podcast-text {
     text-align: center;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -373,13 +404,15 @@ footer span {
   .second-users-img {
     max-width: 90%;
   }
+
+  .signup-button {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 @media only screen and (max-width: 700px) {
-  html {
-    font-size: 60%;
-  }
-
   .footer-details {
     flex-direction: column;
   }
@@ -401,7 +434,7 @@ footer span {
     max-width: 90%;
   }
 
-  .desktop-navbar {
+  .top-navbar {
     display: none;
   }
 
@@ -433,7 +466,7 @@ footer span {
     margin-bottom: 1rem;
   }
 
-  .signup {
+  #signup {
     padding: 0.7rem 1.5rem;
     border-radius: 0.5rem;
     width: 80px;
@@ -447,6 +480,10 @@ footer span {
 
   .footer-details > div {
     width: 100%;
+  }
+
+  .desktop-navbar {
+    display: none;
   }
 }
 
