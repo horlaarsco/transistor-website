@@ -414,9 +414,9 @@ footer span {
   }
 
   .signup-button-mob {
-    font-size: 1.125rem;
+    font-size: 1.3rem;
     display: inline-block;
-    padding: 0.5rem 1.5rem;
+    padding: 0.7rem 1.8rem;
     border-radius: 9999px;
     color: #fff;
     font-weight: 600;
@@ -434,6 +434,7 @@ footer span {
   html {
     font-size: 0.95rem;
   }
+
   h2 {
     font-size: 2rem;
   }
@@ -545,10 +546,6 @@ footer span {
     max-width: 90%;
   }
 
-  html {
-    font-size: 0.85rem;
-  }
-
   .podcast-section > p {
     font-size: 1.2rem;
   }
@@ -556,7 +553,17 @@ footer span {
   h2 {
     line-height: 3rem;
   }
+
+  .podcast-text {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.7rem;
+    line-height: 3.4rem;
+  }
 }
+
 @media only screen and (max-width: 400px) {
   h1 {
     font-size: 2.5rem;
