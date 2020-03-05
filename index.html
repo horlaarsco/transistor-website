@@ -4,56 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/favicon.ico" />
 
-    <title>Transistor</title>
+    <title>
+      Transistor - podcast hosting for creatives, brands, professionals
+    </title>
   </head>
 
   <body>
-    <div class="container">
-      <header>
-        <div class="desktop-navbar">
-          <nav>
-            <a href="/"> <img class="logo" src="./images/logo.svg" alt=""/></a>
-            <ul>
-              <li>Pricing</li>
-              <li>How podcasting works</li>
-              <li>Examples</li>
-            </ul>
-          </nav>
-          <ul class="auth">
-            <li>Log In</li>
-            <li id="signup">Sign Up</li>
-          </ul>
-        </div>
-        <div class="mobile-navbar">
-          <div class="mobile-nav" onclick="showham()">
-            <a href="/"> <img class="logo" src="./images/logo.svg" alt=""/></a>
-            <img class="ham" src="./images/ham.svg" alt="" />
-          </div>
-          <ul id="mobile-nav2">
+    <header>
+      <div class="desktop-navbar">
+        <nav>
+          <a href="/"> <img class="logo" src="./images/logo.svg" alt=""/></a>
+          <ul>
             <li>Pricing</li>
             <li>How podcasting works</li>
             <li>Examples</li>
-            <li>Login</li>
-            <li id="signup">Signup</li>
           </ul>
+        </nav>
+        <ul class="auth">
+          <li>Log In</li>
+          <li id="signup">Sign Up</li>
+        </ul>
+      </div>
+      <div class="mobile-navbar">
+        <div class="mobile-nav" onclick="showham()">
+          <a href="/"> <img class="logo" src="./images/logo.svg" alt=""/></a>
+          <img class="ham" src="./images/ham.svg" alt="" />
         </div>
-      </header>
+        <ul id="mobile-nav2">
+          <li>Pricing</li>
+          <li>How podcasting works</li>
+          <li>Examples</li>
+          <li>Login</li>
+          <li id="signup">Signup</li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
       <section>
         <div class="banner-div">
           <div>
-            <h1>Your podcast's <span> publishing platform</span></h1>
-            <p>
-              Record your audio and upload it to Transistor.
-            </p>
-            <p class="podcast-text">
-              We'll help you distribute your podcast to Apple Podcasts, Spotify,
-              and Google Podcasts.
-            </p>
-            <a class="signup-button-desk" href="">Sign up</a>
+            <div class="banner-desk">
+              <img src="./images/studio.jpg" alt="" />
+            </div>
+            <div class="your-pod">
+              <h1>Your podcast's <span> publishing platform</span></h1>
+              <p class="podcast-text">
+                Record your audio and upload it to Transistor.
+              </p>
+              <p class="podcast-text">
+                We'll help you distribute your podcast to Apple Podcasts,
+                Spotify, and Google Podcasts.
+              </p>
+
+              <div class="banner-mob">
+                <img src="./images/studio.jpg" alt="" />
+              </div>
+              <a class="signup-button-desk" href="">Sign up</a>
+            </div>
+
+            <a class="signup-button-mob" href="">Sign up</a>
           </div>
-          <img class="banner" src="./images/studio.jpg" alt="" />
-          <a class="signup-button-mob" href="">Sign up</a>
         </div>
         <div class="podcast-section">
           <h2>Start as many podcasts as you'd like</h2>
@@ -61,7 +73,7 @@
           <a href="">LEARN MORE → </a>
           <iframe
             class="youtube"
-            width="80%"
+            width="896"
             height="504"
             src="https://www.youtube.com/embed/hUugNVgsXvk"
             frameborder="0"

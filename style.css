@@ -29,13 +29,21 @@ body {
 }
 
 .container {
-  max-width: 87%;
+  max-width: 1280px;
+  overflow: hidden;
   margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+section {
+  overflow: hidden;
 }
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
-  width: 87%;
+  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
   background-color: rgba(12, 24, 36, 0.85);
   z-index: 1000;
@@ -43,6 +51,8 @@ header {
 }
 
 .desktop-navbar {
+  margin: 0 1rem;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -67,6 +77,9 @@ nav {
   margin-left: 0.5rem;
 }
 
+.podcast-text {
+  width: 83%;
+}
 .desktop-navbar li {
   margin-left: 1.2rem;
   border-bottom: 1.5px solid transparent;
@@ -76,6 +89,9 @@ nav {
   border-bottom: solid white 1.5px;
 }
 
+.your-pod {
+  width: 60%;
+}
 .logo {
   width: 10rem;
   margin-right: 1rem;
@@ -94,15 +110,18 @@ nav {
   background-color: white;
   color: #0c1824;
 }
-
-section {
-  margin-top: 10rem;
-}
-
-.banner-div {
+.banner-div > div {
   position: relative;
-  margin: 0 6rem;
-  padding: 8rem 0;
+
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.banner-div {
+  padding: 8rem 0 10rem 0;
+  margin: 0 auto;
+  max-width: 72rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 h1 {
@@ -116,18 +135,17 @@ h1 span {
   display: block;
   color: #fbc75d;
 }
-.banner {
+.banner-desk {
   position: absolute;
   z-index: -1;
-  top: 0;
-  right: 0;
-  max-width: 900px;
-  border-radius: 0.5rem;
+  left: 200px;
+  top: -90px;
 }
 
-.banner-div > div {
-  width: 60%;
-  right: 0;
+.banner-desk img {
+  width: 900px;
+  vertical-align: middle;
+  border-radius: 0.5rem;
 }
 
 .signup-button-desk {
@@ -137,8 +155,8 @@ h1 span {
   border-radius: 9999px;
   color: #fff;
   font-weight: 600;
-  margin-top: 2rem;
-  border: 1px solid #e2e8f0;
+  margin-top: 3rem;
+  border: 2px solid #e2e8f0;
 }
 
 .signup-button-desk:hover {
@@ -336,16 +354,29 @@ footer span {
 .radio {
   max-width: 40rem;
 }
+
+.banner-mob {
+  display: none;
+}
 @media only screen and (max-width: 1150px) {
   .container {
-    max-width: 92%;
+    max-width: 1024px;
     margin: 0 auto;
+    overflow: hidden;
+    padding: 0 1rem;
+  }
+
+  .your-pod {
+    width: 70%;
+  }
+
+  .podcast-text {
+    width: 94%;
   }
 
   header {
-    width: 95%;
+    max-width: 1024px;
   }
-
   .contact-svg img {
     width: 20px;
     height: 20px;
@@ -355,42 +386,65 @@ footer span {
     margin: 0;
   }
 
-  .banner-div > div {
-    width: 80%;
-  }
-
   h1 {
-    font-size: 3.8rem;
-  }
-
-  .youtube {
-    height: 504px;
-    width: 80%;
+    font-size: 3.6rem;
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
+  .youtube {
+    width: 100%;
+  }
+
+  .analytics-image {
+    width: 100%;
+  }
+  header {
+    max-width: 768px;
+  }
   h1 {
     font-size: 3rem;
     line-height: 4rem;
+  }
+
+  .banner-div > div {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .container {
+    max-width: 768px;
+  }
+
+  .desktop-navbar {
+    padding: 1.5rem 0;
   }
 
   h2 {
     line-height: 4rem;
   }
 
-  .banner-div > div {
-    width: 100%;
-  }
   .banner-div {
     text-align: center;
     padding: 0;
   }
 
-  .banner {
-    position: relative;
+  .banner-desk {
+    display: none;
+  }
+
+  .banner-mob {
+    display: block;
+    max-width: 800px;
+  }
+
+  .banner-mob img {
+    margin-top: 1rem;
     width: 100%;
-    margin-top: 3rem;
+    border-radius: 0.5rem;
+  }
+  .your-pod {
+    width: 100%;
   }
 
   .podcast-text {
@@ -399,14 +453,9 @@ footer span {
     margin: 0 auto;
   }
 
-  .youtube {
-    height: 450px;
-    width: 90%;
-  }
-
   .first-users-img,
   .second-users-img {
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .signup-button-desk {
@@ -431,6 +480,10 @@ footer span {
 }
 
 @media only screen and (max-width: 700px) {
+  .youtube {
+    width: 90%;
+    height: 25rem;
+  }
   html {
     font-size: 0.95rem;
   }
@@ -481,10 +534,6 @@ footer span {
     padding: 1rem 1rem;
   }
 
-  section {
-    margin-top: 5rem;
-  }
-
   #mobile-nav2 {
     display: none;
   }
@@ -529,6 +578,9 @@ footer span {
 }
 
 @media only screen and (max-width: 600px) {
+  .youtube {
+    height: 20rem;
+  }
   .container {
     max-width: 96%;
     margin: 0 auto;
@@ -559,12 +611,20 @@ footer span {
   }
 
   h1 {
-    font-size: 2.7rem;
-    line-height: 3.4rem;
+    font-size: 2.4rem;
+    line-height: 3rem;
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .youtube {
+    height: 15rem;
+  }
+}
 @media only screen and (max-width: 400px) {
+  .youtube {
+    height: 15rem;
+  }
   h1 {
     font-size: 2.5rem;
     line-height: 3rem;
