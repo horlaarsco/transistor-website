@@ -549,21 +549,21 @@ footer span {
     text-align: center;
     list-style-type: none;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
   .mobile-navbar li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.9rem;
   }
 
   #signup {
     box-sizing: content-box;
-    padding: 0.7rem 1.5rem;
-    border-radius: 0.5rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.34rem;
     width: 70px;
     margin: 1rem auto;
   }
   .ham {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.85rem;
     border: solid white 1px;
     border-radius: 0.5rem;
   }
@@ -603,7 +603,7 @@ footer span {
   }
 
   h2 {
-    line-height: 3rem;
+    line-height: 2.4rem;
   }
 
   .podcast-text {
@@ -617,6 +617,15 @@ footer span {
 }
 
 @media only screen and (max-width: 500px) {
+  .banner-div > div {
+    padding: 0;
+  }
+  .ham {
+    padding: 0.5rem 0.7rem;
+  }
+  .logo {
+    width: 8.6rem;
+  }
   .youtube {
     height: 15rem;
   }
@@ -625,12 +634,9 @@ footer span {
   .youtube {
     height: 15rem;
   }
-  h1 {
-    font-size: 2.5rem;
-    line-height: 3rem;
-  }
 
-  .mobile-navbar ul {
-    font-size: 1.2rem;
+  h1 {
+    font-size: 2.3rem;
+    line-height: 3rem;
   }
 }
