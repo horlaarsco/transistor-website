@@ -361,7 +361,7 @@ footer span {
 }
 
 .pricing-section {
-  margin-top: 2rem;
+  margin-top: 2rem !important;
   text-align: center;
   padding-left: 3rem;
   padding-right: 3rem;
@@ -433,10 +433,11 @@ h3 {
 table h4 {
   font-size: 1.3rem;
   line-height: 1.9rem;
+  font-weight: 600;
 }
 
 table p {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: #718096;
   font-weight: 400;
 }
@@ -448,7 +449,7 @@ th {
 
 td,
 th {
-  padding: 1.25rem;
+  padding: 1rem;
   border: 1px solid #ddd;
   margin-left: 2px;
 }
@@ -475,13 +476,12 @@ table {
   border-collapse: collapse;
   background-color: #fff;
   color: #0c1824;
-  margin: 1rem;
   padding: 0;
-  max-width: 1280px;
+  max-width: 1216px;
   overflow: hidden;
-  margin: 3rem auto;
+  margin: 3rem 1rem;
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 .trial {
@@ -498,12 +498,24 @@ table {
   border: 0;
   padding: 0.5rem 1.25rem;
 }
+
+.table-mobile {
+  display: none;
+}
 @media only screen and (max-width: 1150px) {
   .container {
     max-width: 1024px;
     margin: 0 auto;
     overflow: hidden;
     padding: 0 1rem;
+  }
+
+  table {
+    margin: 3rem 0;
+  }
+
+  table td:first-of-type {
+    width: 70%;
   }
 
   .your-pod {
@@ -532,6 +544,23 @@ table {
 }
 
 @media only screen and (max-width: 950px) {
+  .table-desk {
+    display: none;
+  }
+
+  th {
+    text-align: center;
+    padding: 1rem 4.5rem;
+    font-weight: 500;
+    line-height: 50px;
+  }
+  table {
+    margin: 3rem auto;
+    max-width: 28rem;
+  }
+  .table-mobile {
+    display: block;
+  }
   .youtube {
     width: 100%;
   }
