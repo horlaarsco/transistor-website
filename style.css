@@ -361,7 +361,10 @@ footer span {
 }
 
 .pricing-section {
+  margin-top: 2rem;
   text-align: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .pricing-hr {
@@ -421,6 +424,79 @@ h3 {
 }
 .questions li {
   line-height: 1.5rem;
+}
+
+.tick {
+  width: 1.5rem;
+}
+
+table h4 {
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+}
+
+table p {
+  font-size: 0.75rem;
+  color: #718096;
+  font-weight: 400;
+}
+th {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  width: 20%;
+}
+
+td,
+th {
+  padding: 1.25rem;
+  border: 1px solid #ddd;
+  margin-left: 2px;
+}
+
+td {
+  font-size: 0.75rem;
+}
+
+th span {
+  font-size: 1rem;
+  color: #718096;
+}
+
+th:first-of-type {
+  width: 40%;
+}
+
+th:first-of-type,
+td:first-of-type {
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: #fff;
+  color: #0c1824;
+  margin: 1rem;
+  padding: 0;
+  max-width: 1280px;
+  overflow: hidden;
+  margin: 3rem auto;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.trial {
+  font-size: 0.875rem;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  background-color: #2d3748;
+  color: white;
+}
+
+.features {
+  background-color: #f7fafc;
+  border: 0;
+  padding: 0.5rem 1.25rem;
 }
 @media only screen and (max-width: 1150px) {
   .container {
