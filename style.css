@@ -39,6 +39,7 @@ body {
 section {
   overflow: hidden;
 }
+
 header {
   position: sticky;
   top: 0;
@@ -357,6 +358,69 @@ footer span {
 
 .banner-mob {
   display: none;
+}
+
+.pricing-section {
+  text-align: center;
+}
+
+.pricing-hr {
+  margin: 1.7rem auto;
+  border: none;
+  background-size: auto 3px;
+  display: block;
+  height: 3px;
+  width: 50%;
+  background-image: url("./images/spiral.svg");
+}
+
+blockquote {
+  max-width: 53rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+i {
+  font-size: 1.9rem;
+  line-height: 2.8rem;
+}
+
+.david {
+  color: #718096;
+}
+
+.faq {
+  text-align: left;
+  max-width: 45rem;
+  margin: 7rem auto;
+}
+
+.questions {
+  background-color: hsla(0, 0%, 100%, 0.06);
+  margin: 2rem 0;
+  padding: 1.5rem;
+}
+.questions p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #cbd5e0;
+}
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.questions h4 {
+  font-size: 1.25rem;
+}
+
+.questions ul {
+  margin-top: 1.5rem;
+  list-style-position: inside;
+  color: #cbd5e0;
+}
+.questions li {
+  line-height: 1.5rem;
 }
 @media only screen and (max-width: 1150px) {
   .container {
